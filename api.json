@@ -26524,11 +26524,16 @@
       "FulfillmentType": {
         "type": "string",
         "enum": [
+			"SIMPLE",
           "PICKUP",
           "SHIPMENT",
           "DELIVERY"
         ],
         "x-enum-elements": [
+			{
+				"name": "SIMPLE",
+				"description": "Undocumented new type"
+			},
           {
             "name": "PICKUP",
             "description": "A recipient to pick up the fulfillment from a physical [location](entity:Location)."
