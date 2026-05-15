@@ -43305,6 +43305,7 @@
           "SUBTOTAL_PHASE",
           "TOTAL_PHASE",
           "APPORTIONED_PERCENTAGE_PHASE",
+		  "CARD​_​SURCHARGE​_​PHASE",
           "APPORTIONED_AMOUNT_PHASE"
         ],
         "x-enum-elements": [
@@ -43320,6 +43321,10 @@
             "name": "APPORTIONED_PERCENTAGE_PHASE",
             "description": "The service charge is calculated as a compounding adjustment\nafter any discounts, but before amount based apportioned service charges\nand any tax considerations."
           },
+		  {
+			  "name": "CARD​_​SURCHARGE​_​PHASE",
+			  "description": "New undocumented phase square added without notifying."
+		  },
           {
             "name": "APPORTIONED_AMOUNT_PHASE",
             "description": "The service charge is calculated as a compounding adjustment\nafter any discounts and percentage based apportioned service charges,\nbut before any tax considerations."
