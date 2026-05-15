@@ -26723,6 +26723,7 @@
         "type": "string",
         "enum": [
 			"SIMPLE",
+          "IN_STORE",
           "PICKUP",
           "SHIPMENT",
           "DELIVERY"
@@ -26732,6 +26733,10 @@
 				"name": "SIMPLE",
 				"description": "Undocumented new type"
 			},
+          {
+            "name": "IN_STORE",
+            "description": "yet another undocumented new type"
+          },
           {
             "name": "PICKUP",
             "description": "A recipient to pick up the fulfillment from a physical [location](entity:Location)."
