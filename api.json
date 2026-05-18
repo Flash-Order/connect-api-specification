@@ -43380,6 +43380,7 @@
         "type": "string",
         "enum": [
           "AUTO_GRATUITY",
+		  "CARD_SURCHARGE",
           "CUSTOM"
         ],
         "x-enum-elements": [
@@ -43387,6 +43388,10 @@
             "name": "AUTO_GRATUITY",
             "description": ""
           },
+		  {
+			  "name": "CARD_SURCHARGE",
+			  "description": ""
+		  },
           {
             "name": "CUSTOM",
             "description": ""
