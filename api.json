@@ -920,6 +920,21 @@
           }
         }
       },
+      "AppFeeAllocation": {
+        "type": "object",
+        "description": "One location's share of an application fee (on refunds, its contribution to the refunded fee). Missing from Square's spec; shape from Square's fee guides.",
+        "x-release-status": "PUBLIC",
+        "properties": {
+          "amount_money": {
+            "$ref": "#/components/schemas/Money",
+            "description": "This location's share of the application fee. The allocations on a payment add up to `app_fee_money`."
+          },
+          "location_id": {
+            "type": "string",
+            "description": "The location that receives this share of the application fee (on a refund, the location that pays this share of the refunded fee)."
+          }
+        }
+      },
       "ApplicationDetails": {
         "type": "object",
         "description": "Details about the application that took the payment.",
