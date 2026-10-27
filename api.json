@@ -25167,7 +25167,8 @@
           "BAD_GATEWAY",
           "SERVICE_UNAVAILABLE",
           "TEMPORARY_ERROR",
-          "GATEWAY_TIMEOUT"
+          "GATEWAY_TIMEOUT",
+          "ORDER_TOTAL_MISMATCH"
         ],
         "x-enum-elements": [
           {
@@ -25944,6 +25945,11 @@
             "name": "GATEWAY_TIMEOUT",
             "description": "Gateway Timeout - a general error occurred.",
             "error-category": "API_ERROR"
+          },
+          {
+            "name": "ORDER_TOTAL_MISMATCH",
+            "description": "undocumented: PayOrder rejects when the listed payments do not sum to the order total",
+            "error-category": "INVALID_REQUEST_ERROR"
           }
         ],
         "description": "Indicates the specific error that occurred during a request to a\nSquare API.",
@@ -26726,7 +26732,8 @@
           "IN_STORE",
           "PICKUP",
           "SHIPMENT",
-          "DELIVERY"
+          "DELIVERY",
+          "DIGITAL"
         ],
         "x-enum-elements": [
 			{
@@ -26748,6 +26755,10 @@
           {
             "name": "DELIVERY",
             "description": "A courier to deliver the fulfillment."
+          },
+          {
+            "name": "DIGITAL",
+            "description": "A digital fulfillment (gift cards, digital goods) \u2014 undocumented in the spec but returned by the live API"
           }
         ],
         "description": "The type of fulfillment.",
@@ -39350,7 +39361,8 @@
           "TYPE_LENGTH",
           "TYPE_VOLUME",
           "TYPE_WEIGHT",
-          "TYPE_GENERIC"
+          "TYPE_GENERIC",
+          "TYPE_TIME"
         ],
         "x-enum-elements": [
           {
@@ -39376,6 +39388,10 @@
           {
             "name": "TYPE_GENERIC",
             "description": "The unit details are contained in the generic_unit field."
+          },
+          {
+            "name": "TYPE_TIME",
+            "description": "The unit details are contained in the time_unit field \u2014 missing from the spec but returned by the live API"
           }
         ],
         "description": "Describes the type of this unit and indicates which field contains the unit information. This is an ‘open’ enum.",
@@ -41711,7 +41727,8 @@
         "enum": [
           "PICKUP",
           "SHIPMENT",
-          "DELIVERY"
+          "DELIVERY",
+          "DIGITAL"
         ],
         "x-enum-elements": [
           {
@@ -41725,6 +41742,10 @@
           {
             "name": "DELIVERY",
             "description": "A courier to deliver the fulfillment."
+          },
+          {
+            "name": "DIGITAL",
+            "description": "A digital fulfillment (gift cards, digital goods) \u2014 undocumented in the spec but returned by the live API"
           }
         ],
         "description": "The type of fulfillment.",
